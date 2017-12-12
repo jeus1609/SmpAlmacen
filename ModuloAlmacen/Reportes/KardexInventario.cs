@@ -19,19 +19,30 @@ namespace ModuloAlmacen.Reportes
 
         private void KardexInventario_Load(object sender, EventArgs e)
         {
-            try
-            {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //try
+            //{
                 DataSets.dsALMACENTableAdapters.vListaKardexInventarioTableAdapter adapKardexInventario = new DataSets.dsALMACENTableAdapters.vListaKardexInventarioTableAdapter();
                 DataSets.dsALMACEN dsAlmacen = new DataSets.dsALMACEN();
-                adapKardexInventario.Fill(dsAlmacen.vListaKardexInventario);
+                if (checkBox1.Checked)
+
+                    adapKardexInventario.Fill(dsAlmacen.vListaKardexInventario, null, null); //DateTimePicker1.Value.AddDays(1)
+
+                else
+                    adapKardexInventario.Fill(dsAlmacen.vListaKardexInventario, dateTimePicker1.Value.ToShortDateString(), dateTimePicker2.Value.AddDays(1).ToShortDateString());
+                //MessageBox.Show(dateTimePicker1.Value.ToShortDateString());
                 rptKardexInv rptKardex = new rptKardexInv();
                 rptKardex.SetDataSource(dsAlmacen);
                 this.crystalReportViewer1.ReportSource = rptKardex;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
         }
     }
 }

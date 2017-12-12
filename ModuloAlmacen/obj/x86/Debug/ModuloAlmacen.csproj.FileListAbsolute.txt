@@ -135,7 +135,6 @@ C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ShockwaveFlashO
 C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\stdole.dll
 C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ES\System.Data.SqlServerCe.resources.dll
-C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Almacen.Entrada.resources
 C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Interfaz.resources
 C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.login.resources

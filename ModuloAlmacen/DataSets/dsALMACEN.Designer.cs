@@ -3784,6 +3784,10 @@ namespace ModuloAlmacen.DataSets {
             
             private global::System.Data.DataColumn columnsalidas;
             
+            private global::System.Data.DataColumn columnStockActual;
+            
+            private global::System.Data.DataColumn columnPrecio;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public vListaKardexInventarioDataTable() {
@@ -3851,6 +3855,22 @@ namespace ModuloAlmacen.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn StockActualColumn {
+                get {
+                    return this.columnStockActual;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn PrecioColumn {
+                get {
+                    return this.columnPrecio;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -3886,13 +3906,15 @@ namespace ModuloAlmacen.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public vListaKardexInventarioRow AddvListaKardexInventarioRow(string id_CatalogoBien, string DescBien, decimal entradas, decimal salidas) {
+            public vListaKardexInventarioRow AddvListaKardexInventarioRow(string id_CatalogoBien, string DescBien, decimal entradas, decimal salidas, decimal StockActual, decimal Precio) {
                 vListaKardexInventarioRow rowvListaKardexInventarioRow = ((vListaKardexInventarioRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id_CatalogoBien,
                         DescBien,
                         entradas,
-                        salidas};
+                        salidas,
+                        StockActual,
+                        Precio};
                 rowvListaKardexInventarioRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowvListaKardexInventarioRow);
                 return rowvListaKardexInventarioRow;
@@ -3926,6 +3948,8 @@ namespace ModuloAlmacen.DataSets {
                 this.columnDescBien = base.Columns["DescBien"];
                 this.columnentradas = base.Columns["entradas"];
                 this.columnsalidas = base.Columns["salidas"];
+                this.columnStockActual = base.Columns["StockActual"];
+                this.columnPrecio = base.Columns["Precio"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3939,6 +3963,10 @@ namespace ModuloAlmacen.DataSets {
                 base.Columns.Add(this.columnentradas);
                 this.columnsalidas = new global::System.Data.DataColumn("salidas", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsalidas);
+                this.columnStockActual = new global::System.Data.DataColumn("StockActual", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStockActual);
+                this.columnPrecio = new global::System.Data.DataColumn("Precio", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPrecio);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_CatalogoBien}, true));
                 this.columnid_CatalogoBien.AllowDBNull = false;
@@ -5881,6 +5909,39 @@ namespace ModuloAlmacen.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public decimal StockActual {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablevListaKardexInventario.StockActualColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'StockActual\' de la tabla \'vListaKardexInventario\' es DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tablevListaKardexInventario.StockActualColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public decimal Precio {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablevListaKardexInventario.PrecioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Precio\' de la tabla \'vListaKardexInventario\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablevListaKardexInventario.PrecioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsDescBienNull() {
                 return this.IsNull(this.tablevListaKardexInventario.DescBienColumn);
             }
@@ -5913,6 +5974,30 @@ namespace ModuloAlmacen.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetsalidasNull() {
                 this[this.tablevListaKardexInventario.salidasColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsStockActualNull() {
+                return this.IsNull(this.tablevListaKardexInventario.StockActualColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetStockActualNull() {
+                this[this.tablevListaKardexInventario.StockActualColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsPrecioNull() {
+                return this.IsNull(this.tablevListaKardexInventario.PrecioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetPrecioNull() {
+                this[this.tablevListaKardexInventario.PrecioColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -10682,6 +10767,8 @@ ORDER BY ENTRADA.NroPecosa DESC, ENTRADA.NroPedido DESC";
             tableMapping.ColumnMappings.Add("DescBien", "DescBien");
             tableMapping.ColumnMappings.Add("entradas", "entradas");
             tableMapping.ColumnMappings.Add("salidas", "salidas");
+            tableMapping.ColumnMappings.Add("StockActual", "StockActual");
+            tableMapping.ColumnMappings.Add("Precio", "Precio");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -10698,21 +10785,42 @@ ORDER BY ENTRADA.NroPecosa DESC, ENTRADA.NroPedido DESC";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        CATALOGO_BIEN.id_CatalogoBien, CATALOGO_BIEN.DescBien, SUM(ENTRADA_DETALLE.Cantidad) AS entradas, SUM(SALIDA_DETALLE.Cantidad) 
-                         AS salidas
-FROM            CATALOGO_BIEN INNER JOIN
-                         ENTRADA_DETALLE ON CATALOGO_BIEN.id_CatalogoBien = ENTRADA_DETALLE.id_CatalogoBien LEFT OUTER JOIN
+            this._commandCollection[0].CommandText = @"SELECT        CATALOGO_BIEN.id_CatalogoBien, CATALOGO_BIEN.DescBien, SUM(ENTRADA_DETALLE.Cantidad) AS entradas, SUM(SALIDA_DETALLE.Cantidad) AS salidas, 
+                         MOVIMIENTO_BIEN.StockActual, MOVIMIENTO_BIEN.Precio
+FROM            (SELECT        MAX(id_MovimientoBien) AS m_movimiento, id_CatalogoBien
+                          FROM            MOVIMIENTO_BIEN AS MOVIMIENTO_BIEN_1
+                          GROUP BY id_CatalogoBien) AS Max_Movimiento INNER JOIN
+                         MOVIMIENTO_BIEN ON Max_Movimiento.m_movimiento = MOVIMIENTO_BIEN.id_MovimientoBien RIGHT OUTER JOIN
+                         CATALOGO_BIEN INNER JOIN
+                         ENTRADA_DETALLE ON CATALOGO_BIEN.id_CatalogoBien = ENTRADA_DETALLE.id_CatalogoBien ON 
+                         MOVIMIENTO_BIEN.id_EntradaDetalle = ENTRADA_DETALLE.id_EntradaDetalle LEFT OUTER JOIN
                          SALIDA_DETALLE ON ENTRADA_DETALLE.id_EntradaDetalle = SALIDA_DETALLE.id_EntradaDetalle
-GROUP BY CATALOGO_BIEN.id_CatalogoBien, CATALOGO_BIEN.DescBien";
+WHERE        (MOVIMIENTO_BIEN.FechaMovimiento BETWEEN @fecha1 AND @fecha2) OR
+                         (@fecha1 IS NULL) AND (@fecha2 IS NULL)
+GROUP BY CATALOGO_BIEN.id_CatalogoBien, CATALOGO_BIEN.DescBien, MOVIMIENTO_BIEN.StockActual, MOVIMIENTO_BIEN.Precio";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha1", global::System.Data.SqlDbType.DateTime2, 6, global::System.Data.ParameterDirection.Input, 0, 0, "FechaMovimiento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha2", global::System.Data.SqlDbType.DateTime2, 6, global::System.Data.ParameterDirection.Input, 0, 0, "FechaMovimiento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dsALMACEN.vListaKardexInventarioDataTable dataTable) {
+        public virtual int Fill(dsALMACEN.vListaKardexInventarioDataTable dataTable, string fecha1, string fecha2) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((fecha1 == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(fecha1));
+            }
+            if ((fecha2 == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(fecha2));
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -10724,8 +10832,20 @@ GROUP BY CATALOGO_BIEN.id_CatalogoBien, CATALOGO_BIEN.DescBien";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsALMACEN.vListaKardexInventarioDataTable GetData() {
+        public virtual dsALMACEN.vListaKardexInventarioDataTable GetData(string fecha1, string fecha2) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((fecha1 == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(fecha1));
+            }
+            if ((fecha2 == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(fecha2));
+            }
             dsALMACEN.vListaKardexInventarioDataTable dataTable = new dsALMACEN.vListaKardexInventarioDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
