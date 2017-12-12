@@ -104,3 +104,47 @@ C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmac
 C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.exe
 C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.pdb
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\DataSets\DBALMACEN.mdf
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\DataSets\DBALMACEN_log.ldf
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ModuloAlmacen.exe.config
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ModuloAlmacen.exe
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ModuloAlmacen.pdb
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\FlashControlV71.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\stdole.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ES\System.Data.SqlServerCe.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Almacen.Entrada.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Interfaz.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.login.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Form1.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Principal.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Almacen.Salida.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Properties.Resources.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Reportes.KardexInventario.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csproj.GenerateResource.Cache
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.exe
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.pdb
