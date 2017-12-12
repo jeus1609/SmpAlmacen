@@ -1,0 +1,212 @@
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\DataSets\DBALMACEN.mdf
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\DataSets\DBALMACEN_log.ldf
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ModuloAlmacen.exe.config
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ModuloAlmacen.exe
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ModuloAlmacen.pdb
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\EnvDTE.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\stdole.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\EnvDTE80.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.Build.Tasks.Core.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\VSLangProj.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\VSLangProj80.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.WCFReference.Interop.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.Build.Utilities.Core.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\VSLangProj2.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\ES\System.Data.SqlServerCe.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.VisualStudio.Data.Services.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.VisualStudio.Data.Core.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.VisualStudio.GraphModel.resources.dll
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csproj.ModuloAlmacen.exe.config
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Almacen.Entrada.resources
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Interfaz.resources
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.login.resources
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Form1.resources
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Principal.resources
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Almacen.Salida.resources
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Properties.Resources.resources
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Reportes.rptKardex.resources
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.exe
+C:\Users\Usuario\Documents\Visual Studio 2010\Projects\ModuloAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.pdb
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csproj.ModuloAlmacen.exe.config
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Almacen.Entrada.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Interfaz.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.login.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Form1.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Principal.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Formularios.Almacen.Salida.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Properties.Resources.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.Reportes.rptKardex.resources
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csproj.GenerateResource.Cache
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\DataSets\DBALMACEN.mdf
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\DataSets\DBALMACEN_log.ldf
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ModuloAlmacen.exe.config
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ModuloAlmacen.exe
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ModuloAlmacen.pdb
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\EnvDTE.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\stdole.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\EnvDTE80.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.Build.Tasks.Core.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\VSLangProj.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\VSLangProj80.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.WCFReference.Interop.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.Build.Utilities.Core.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\VSLangProj2.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\ES\System.Data.SqlServerCe.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.VisualStudio.Data.Services.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.VisualStudio.Data.Core.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\bin\Debug\es\Microsoft.VisualStudio.GraphModel.resources.dll
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.exe
+C:\Users\Usuario\Source\Repos\SmpAlmacen\ModuloAlmacen\obj\x86\Debug\ModuloAlmacen.pdb
