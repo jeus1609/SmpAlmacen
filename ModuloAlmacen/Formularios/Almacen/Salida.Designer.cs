@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSeleccionarItem = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtDescItem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEncargado = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtFechaSalida = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -145,33 +145,33 @@
             // 
             // StockActual
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.StockActual.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.StockActual.DefaultCellStyle = dataGridViewCellStyle41;
             this.StockActual.FillWeight = 74.1664F;
             this.StockActual.HeaderText = "StockActual";
             this.StockActual.Name = "StockActual";
             // 
             // Cantidad
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cantidad.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cantidad.DefaultCellStyle = dataGridViewCellStyle42;
             this.Cantidad.FillWeight = 74.1664F;
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.Name = "Cantidad";
             // 
             // PrecioSalida
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.PrecioSalida.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.PrecioSalida.DefaultCellStyle = dataGridViewCellStyle43;
             this.PrecioSalida.FillWeight = 74.1664F;
             this.PrecioSalida.HeaderText = "Precio Salida";
             this.PrecioSalida.Name = "PrecioSalida";
             // 
             // SubTotal
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.SubTotal.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.SubTotal.DefaultCellStyle = dataGridViewCellStyle44;
             this.SubTotal.FillWeight = 74.1664F;
             this.SubTotal.HeaderText = "SubTotal";
             this.SubTotal.Name = "SubTotal";
@@ -244,12 +244,12 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Descripcion Bien";
             // 
-            // textBox4
+            // txtEncargado
             // 
-            this.textBox4.Location = new System.Drawing.Point(16, 165);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(288, 20);
-            this.textBox4.TabIndex = 23;
+            this.txtEncargado.Location = new System.Drawing.Point(16, 165);
+            this.txtEncargado.Name = "txtEncargado";
+            this.txtEncargado.Size = new System.Drawing.Size(288, 20);
+            this.txtEncargado.TabIndex = 23;
             // 
             // label5
             // 
@@ -264,7 +264,7 @@
             // txtFechaSalida
             // 
             this.txtFechaSalida.Enabled = false;
-            this.txtFechaSalida.Location = new System.Drawing.Point(339, 165);
+            this.txtFechaSalida.Location = new System.Drawing.Point(371, 165);
             this.txtFechaSalida.Name = "txtFechaSalida";
             this.txtFechaSalida.Size = new System.Drawing.Size(123, 20);
             this.txtFechaSalida.TabIndex = 24;
@@ -272,7 +272,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(336, 149);
+            this.label6.Location = new System.Drawing.Point(368, 149);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 25;
@@ -428,7 +428,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtFechaSalida);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtEncargado);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label4);
@@ -461,7 +461,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDescItem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEncargado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtFechaSalida;
         private System.Windows.Forms.Label label6;

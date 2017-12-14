@@ -53,7 +53,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icono.ico</ApplicationIcon>
+    <ApplicationIcon>Icono SMP.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -89,11 +89,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsALMACEN.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Acerca de\AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Acerca de\AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Almacen\Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Almacen\Entrada.Designer.cs">
       <DependentUpon>Entrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configs\Conexion.cs" />
+    <Compile Include="Formularios\Configs\ConexionSIGA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configs\ConexionSIGA.Designer.cs">
+      <DependentUpon>ConexionSIGA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configs\PleaseWaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configs\PleaseWaitForm.Designer.cs">
+      <DependentUpon>PleaseWaitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Interfaz.cs">
       <SubType>Form</SubType>
@@ -148,8 +167,17 @@
       <DependentUpon>KardexInventario.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Formularios\Acerca de\AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Almacen\Entrada.resx">
       <DependentUpon>Entrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configs\ConexionSIGA.resx">
+      <DependentUpon>ConexionSIGA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configs\PleaseWaitForm.resx">
+      <DependentUpon>PleaseWaitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Interfaz.resx">
       <DependentUpon>Interfaz.cs</DependentUpon>
@@ -228,7 +256,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DBALMACEN.mdf</DependentUpon>
     </Content>
-    <Content Include="icono.ico" />
+    <Content Include="Icono SMP.ico" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

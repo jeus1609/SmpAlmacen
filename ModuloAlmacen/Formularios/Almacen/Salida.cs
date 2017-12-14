@@ -70,6 +70,8 @@ namespace ModuloAlmacen.Formularios.Almacen
 
                 this.SIdEntradaDetalle = frmEntrada.SIdEntradaDetalle;
                 this.SPrecioSalida = frmEntrada.SPrecioUnitario;
+                this.errorProvider1.SetError(btnSeleccionarItem, "");
+
                 txtCantidadAgregar.Text = "0";
                 txtCantidadAgregar.SelectAll();
                 txtCantidadAgregar.Focus();
@@ -83,10 +85,9 @@ namespace ModuloAlmacen.Formularios.Almacen
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (decimal.Parse(txtCantidadAgregar.Text) != 0)
+            if (!string.IsNullOrWhiteSpace(txtCodItem.Text))
             {
-                // Funcion para agregar en orden a las columnas del datagridview
-                if (!string.IsNullOrWhiteSpace(txtCodItem.Text))
+                if (decimal.Parse(txtCantidadAgregar.Text) != 0)
                 {
                     int rowId = verificarSiExisteItem(txtCodItem.Text);
                     string cantidadAgregar = txtCantidadAgregar.Text;
@@ -116,12 +117,16 @@ namespace ModuloAlmacen.Formularios.Almacen
 
                     txtCantidadAgregar.Text = "0";
 
-                    //dos lineas siguientes es
                     decimal localPorEntregar = CantItemPorEntregarPecosa - cantEnTabla(txtCodItem.Text);
                     txtPorEntregar.Text = localPorEntregar.ToString();
                     updateTotal();
+                    //txtCodItem.Text = "";
                 }
+                else
+                    this.errorProvider1.SetError(txtCantidadAgregar, "Ingrese cantidad distinta a cero");
             }
+            else
+                this.errorProvider1.SetError(btnSeleccionarItem, "Seleccione item");
         }
 
         private int verificarSiExisteItem(string Item)
@@ -198,7 +203,7 @@ namespace ModuloAlmacen.Formularios.Almacen
             errorMensaje = "la cantidad no es valida";
             return false;
         }
-
+                
         private void txtCantidadAgregar_Validated(object sender, EventArgs e)
         {
             errorProvider1.SetError(txtCantidadAgregar, "");
@@ -251,46 +256,53 @@ namespace ModuloAlmacen.Formularios.Almacen
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (dgvListaEntregar.RowCount != 0)
+            if (!string.IsNullOrWhiteSpace(txtEncargado.Text))
             {
-                DataSets.dsALMACENTableAdapters.SALIDATableAdapter adapSalida = new DataSets.dsALMACENTableAdapters.SALIDATableAdapter();
-                DataSets.dsALMACENTableAdapters.SALIDA_DETALLETableAdapter adapSalidaDetalle = new DataSets.dsALMACENTableAdapters.SALIDA_DETALLETableAdapter();
-                DataSets.dsALMACENTableAdapters.ENTRADA_DETALLETableAdapter adapEntradaDetalle = new DataSets.dsALMACENTableAdapters.ENTRADA_DETALLETableAdapter();
-
-                //try
+                if (dgvListaEntregar.RowCount != 0)
                 {
-                    adapSalida.Transaction = adapSalidaDetalle.Transaction;
+                    DataSets.dsALMACENTableAdapters.SALIDATableAdapter adapSalida = new DataSets.dsALMACENTableAdapters.SALIDATableAdapter();
+                    DataSets.dsALMACENTableAdapters.SALIDA_DETALLETableAdapter adapSalidaDetalle = new DataSets.dsALMACENTableAdapters.SALIDA_DETALLETableAdapter();
+                    DataSets.dsALMACENTableAdapters.ENTRADA_DETALLETableAdapter adapEntradaDetalle = new DataSets.dsALMACENTableAdapters.ENTRADA_DETALLETableAdapter();
 
-                    int idSalida = int.Parse(adapSalida.InsertIdentity(textBox4.Text).ToString());
-                    //MessageBox.Show(idSalida.ToString());
-                    int localid_EntradaDetalleColumna;
-                    decimal localCantidad;
-                    decimal localPrecioSalida;
-
-                    foreach (DataGridViewRow rowDataGrid1 in dgvListaEntregar.Rows)
+                    try
                     {
-                        localid_EntradaDetalleColumna = int.Parse(rowDataGrid1.Cells["id_EntradaDetalleColumna"].Value.ToString());
-                        localCantidad = decimal.Parse(rowDataGrid1.Cells["Cantidad"].Value.ToString());
-                        localPrecioSalida = decimal.Parse(rowDataGrid1.Cells["PrecioSalida"].Value.ToString());
+                        adapSalida.Transaction = adapSalidaDetalle.Transaction;
 
-                        adapEntradaDetalle.UpPorEntregar(-1 * localCantidad, localid_EntradaDetalleColumna);//quitando cantidad por entregar en entrada_detalle
+                        int idSalida = int.Parse(adapSalida.InsertIdentity(txtEncargado.Text).ToString());
+                        //MessageBox.Show(idSalida.ToString());
+                        int localid_EntradaDetalleColumna;
+                        decimal localCantidad;
+                        decimal localPrecioSalida;
 
-                        adapSalidaDetalle.Insert(idSalida, localid_EntradaDetalleColumna, localCantidad, localPrecioSalida);
+                        foreach (DataGridViewRow rowDataGrid1 in dgvListaEntregar.Rows)
+                        {
+                            localid_EntradaDetalleColumna = int.Parse(rowDataGrid1.Cells["id_EntradaDetalleColumna"].Value.ToString());
+                            localCantidad = decimal.Parse(rowDataGrid1.Cells["Cantidad"].Value.ToString());
+                            localPrecioSalida = decimal.Parse(rowDataGrid1.Cells["PrecioSalida"].Value.ToString());
+
+                            adapEntradaDetalle.UpPorEntregar(-1 * localCantidad, localid_EntradaDetalleColumna);//quitando cantidad por entregar en entrada_detalle
+
+                            adapSalidaDetalle.Insert(idSalida, localid_EntradaDetalleColumna, localCantidad, localPrecioSalida);
+                        }
+
+                        MessageBox.Show("Registros Guardados Correctamente");
+                        btnGuardar.Enabled = false;
                     }
-
-                    MessageBox.Show("Registros Guardados Correctamente");
-                    btnGuardar.Enabled = false;
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //throw;
+                    }
+                    finally
+                    {
+                        adapSalida.Connection.Close();
+                        btnSalir.Text = "Salir";
+                    }
                 }
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //    //throw;
-                //}
-                //finally
-                //{
-                //    adapSalida.Connection.Close();
-                btnSalir.Text = "Salir";
-                //}
+            }
+            else
+            {
+                this.errorProvider1.SetError(txtEncargado, "Ingrese Responsable");
             }
         }
     }

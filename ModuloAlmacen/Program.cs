@@ -15,7 +15,8 @@ namespace ModuloAlmacen
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Formularios.login());
+            Formularios.login login = Formularios.login.Instancia();
+            Application.Run(login);
         }
     }
 }

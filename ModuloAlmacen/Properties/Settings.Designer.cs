@@ -26,8 +26,8 @@ namespace ModuloAlmacen.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.100;Initial Catalog=DBALMACEN;Persist Security Info=True;Us" +
-            "er ID=sa;Password=Semo123")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DataSets\\DBAL" +
+            "MACEN.mdf;Integrated Security=True;Connect Timeout=30")]
         public string DBALMACENConnectionString {
             get {
                 return ((string)(this["DBALMACENConnectionString"]));
@@ -38,10 +38,70 @@ namespace ModuloAlmacen.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.100;Initial Catalog=SIGA;Persist Security Info=True;User ID" +
-            "=sa")]
+            "=sa;Password=Semo123")]
         public string SIGAConnectionString {
             get {
                 return ((string)(this["SIGAConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Servidor ejem 192.168.1.100")]
+        public string SIGA_servidor {
+            get {
+                return ((string)(this["SIGA_servidor"]));
+            }
+            set {
+                this["SIGA_servidor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("BaseDatosSmp")]
+        public string SIGA_database {
+            get {
+                return ((string)(this["SIGA_database"]));
+            }
+            set {
+                this["SIGA_database"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("user_smp")]
+        public string SIGA_user {
+            get {
+                return ((string)(this["SIGA_user"]));
+            }
+            set {
+                this["SIGA_user"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Password")]
+        public string SIGA_passwd {
+            get {
+                return ((string)(this["SIGA_passwd"]));
+            }
+            set {
+                this["SIGA_passwd"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ProyectoSiaf {
+            get {
+                return ((string)(this["ProyectoSiaf"]));
+            }
+            set {
+                this["ProyectoSiaf"] = value;
             }
         }
     }

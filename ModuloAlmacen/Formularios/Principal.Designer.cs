@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.almacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salidaAlmacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,9 +38,13 @@
             this.kardexDeInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configurarSIGAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.seleccionarAlmacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +55,7 @@
             this.almacenToolStripMenuItem,
             this.interfazToolStripMenuItem,
             this.reportesToolStripMenuItem,
+            this.herramientasToolStripMenuItem,
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -116,8 +122,26 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de ...";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
+            // 
+            // herramientasToolStripMenuItem
+            // 
+            this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.configurarSIGAToolStripMenuItem,
+            this.seleccionarAlmacenToolStripMenuItem,
+            this.proyectoToolStripMenuItem});
+            this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
+            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.herramientasToolStripMenuItem.Text = "Mantenimiento";
+            // 
+            // configurarSIGAToolStripMenuItem
+            // 
+            this.configurarSIGAToolStripMenuItem.Name = "configurarSIGAToolStripMenuItem";
+            this.configurarSIGAToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.configurarSIGAToolStripMenuItem.Text = "Configurar SIGA";
+            this.configurarSIGAToolStripMenuItem.Click += new System.EventHandler(this.configurarSIGAToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -142,6 +166,18 @@
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
             this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
             // 
+            // seleccionarAlmacenToolStripMenuItem
+            // 
+            this.seleccionarAlmacenToolStripMenuItem.Name = "seleccionarAlmacenToolStripMenuItem";
+            this.seleccionarAlmacenToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.seleccionarAlmacenToolStripMenuItem.Text = "Almacen";
+            // 
+            // proyectoToolStripMenuItem
+            // 
+            this.proyectoToolStripMenuItem.Name = "proyectoToolStripMenuItem";
+            this.proyectoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.proyectoToolStripMenuItem.Text = "Proyecto";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -150,11 +186,15 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Principal";
             this.Text = "Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Principal_FormClosed);
+            this.Load += new System.EventHandler(this.Principal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -178,5 +218,9 @@
         private System.Windows.Forms.ToolStripMenuItem salidaAlmacenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importarPECOSAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kardexDeInventarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configurarSIGAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seleccionarAlmacenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proyectoToolStripMenuItem;
     }
 }

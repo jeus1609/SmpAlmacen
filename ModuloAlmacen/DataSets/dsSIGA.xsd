@@ -9,7 +9,7 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vListaPedidosTableAdapter" GeneratorDataComponentClassName="vListaPedidosTableAdapter" Name="vListaPedidos" UserDataComponentName="vListaPedidosTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SIGAConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByActProy" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataByActProy" GeneratorSourceName="FillByActProy" GetMethodModifier="Public" GetMethodName="GetDataByActProy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataByActProy" UserSourceName="FillByActProy">
+              <DbSource ConnectionRef="SIGAConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByActProy" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataByActProy" GeneratorSourceName="FillByActProy" GetMethodModifier="Public" GetMethodName="GetDataByActProy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataByActProy" UserSourceName="FillByActProy">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        SIG_PEDIDOS.ANO_EJE, SIG_PEDIDOS.SEC_EJEC, SIG_PEDIDOS.TIPO_BIEN, SIG_PEDIDOS.TIPO_PEDIDO, SIG_PEDIDOS.NRO_PEDIDO, 
@@ -24,7 +24,7 @@ FROM            SIG_DETALLE_PECOSA INNER JOIN
                         SIG_PEDIDOS ON SIG_DETALLE_PEDIDOS.ANO_EJE = SIG_PEDIDOS.ANO_EJE AND SIG_DETALLE_PEDIDOS.sec_ejec = SIG_PEDIDOS.SEC_EJEC AND 
                          SIG_DETALLE_PEDIDOS.TIPO_BIEN = SIG_PEDIDOS.TIPO_BIEN AND SIG_DETALLE_PEDIDOS.TIPO_PEDIDO = SIG_PEDIDOS.TIPO_PEDIDO AND 
                          SIG_DETALLE_PEDIDOS.NRO_PEDIDO = SIG_PEDIDOS.NRO_PEDIDO INNER JOIN
-                         [10.19.0.13].[SIGA].[dbo].SIG_PERSONAL ON SIG_PEDIDOS.SEC_EJEC = SIG_PERSONAL.sec_ejec AND SIG_PEDIDOS.EMPLEADO = SIG_PERSONAL.empleado
+                         SIG_PERSONAL ON SIG_PEDIDOS.SEC_EJEC = SIG_PERSONAL.sec_ejec AND SIG_PEDIDOS.EMPLEADO = SIG_PERSONAL.empleado
 WHERE        (SIG_PEDIDOS.ACT_PROY = @ActProy) AND (SIG_PEDIDOS.ANO_EJE = @AnioEje) AND (SIG_PEDIDOS.TIPO_BIEN = 'B')
 GROUP BY SIG_PEDIDOS.SEC_EJEC, SIG_PEDIDOS.ANO_EJE, SIG_PEDIDOS.TIPO_PEDIDO, SIG_PEDIDOS.TIPO_BIEN, SIG_PEDIDOS.NRO_PEDIDO, 
                          SIG_DETALLE_PECOSA.NRO_PECOSA, SIG_PERSONAL.nombre_completo, SIG_PEDIDOS.FECHA_REG, ISNULL( cast( SIG_PEDIDOS.MOTIVO_PEDIDO as Varchar(200)),'Ninguno')</CommandText>
@@ -51,7 +51,7 @@ GROUP BY SIG_PEDIDOS.SEC_EJEC, SIG_PEDIDOS.ANO_EJE, SIG_PEDIDOS.TIPO_PEDIDO, SIG
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vListaPedidoDetalleTableAdapter" GeneratorDataComponentClassName="vListaPedidoDetalleTableAdapter" Name="vListaPedidoDetalle" UserDataComponentName="vListaPedidoDetalleTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SIGAConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByDetallePedido" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataByDetallePedido" GeneratorSourceName="FillByDetallePedido" GetMethodModifier="Public" GetMethodName="GetDataByDetallePedido" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataByDetallePedido" UserSourceName="FillByDetallePedido">
+              <DbSource ConnectionRef="SIGAConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByDetallePedido" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataByDetallePedido" GeneratorSourceName="FillByDetallePedido" GetMethodModifier="Public" GetMethodName="GetDataByDetallePedido" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataByDetallePedido" UserSourceName="FillByDetallePedido">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        CATALOGO_BIEN_SERV.CODIGO_ITEM, CATALOGO_BIEN_SERV.NOMBRE_ITEM, UNIDAD_MEDIDA.NOMBRE AS 'UNIDAD', SIG_DETALLE_PEDIDOS.PRECIO_UNIT, 
@@ -93,7 +93,7 @@ where SIG_DETALLE_PEDIDOS.ano_eje = @ano_eje  and SIG_DETALLE_PEDIDOS.sec_ejec =
   <xs:element name="dsSIGA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsSIGA" msprop:Generator_UserDSName="dsSIGA">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="vListaPedidos" msprop:Generator_TableClassName="vListaPedidosDataTable" msprop:Generator_TableVarName="tablevListaPedidos" msprop:Generator_RowChangedName="vListaPedidosRowChanged" msprop:Generator_TablePropName="vListaPedidos" msprop:Generator_RowDeletingName="vListaPedidosRowDeleting" msprop:Generator_RowChangingName="vListaPedidosRowChanging" msprop:Generator_RowEvHandlerName="vListaPedidosRowChangeEventHandler" msprop:Generator_RowDeletedName="vListaPedidosRowDeleted" msprop:Generator_RowClassName="vListaPedidosRow" msprop:Generator_UserTableName="vListaPedidos" msprop:Generator_RowEvArgName="vListaPedidosRowChangeEvent">
+        <xs:element name="vListaPedidos" msprop:Generator_TableClassName="vListaPedidosDataTable" msprop:Generator_TableVarName="tablevListaPedidos" msprop:Generator_TablePropName="vListaPedidos" msprop:Generator_RowDeletingName="vListaPedidosRowDeleting" msprop:Generator_RowChangingName="vListaPedidosRowChanging" msprop:Generator_RowEvHandlerName="vListaPedidosRowChangeEventHandler" msprop:Generator_RowDeletedName="vListaPedidosRowDeleted" msprop:Generator_UserTableName="vListaPedidos" msprop:Generator_RowChangedName="vListaPedidosRowChanged" msprop:Generator_RowEvArgName="vListaPedidosRowChangeEvent" msprop:Generator_RowClassName="vListaPedidosRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ANO_EJE" msprop:Generator_ColumnVarNameInTable="columnANO_EJE" msprop:Generator_ColumnPropNameInRow="ANO_EJE" msprop:Generator_ColumnPropNameInTable="ANO_EJEColumn" msprop:Generator_UserColumnName="ANO_EJE" type="xs:decimal" />
@@ -119,7 +119,7 @@ where SIG_DETALLE_PEDIDOS.ano_eje = @ano_eje  and SIG_DETALLE_PEDIDOS.sec_ejec =
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="NRO_PECOSA" msprop:Generator_ColumnVarNameInTable="columnNRO_PECOSA" msprop:Generator_ColumnPropNameInRow="NRO_PECOSA" msprop:Generator_ColumnPropNameInTable="NRO_PECOSAColumn" msprop:Generator_UserColumnName="NRO_PECOSA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NRO_PECOSA" msprop:Generator_ColumnVarNameInTable="columnNRO_PECOSA" msprop:Generator_ColumnPropNameInRow="NRO_PECOSA" msprop:Generator_ColumnPropNameInTable="NRO_PECOSAColumn" msprop:Generator_UserColumnName="NRO_PECOSA" type="xs:decimal" />
               <xs:element name="nombre_completo" msprop:Generator_ColumnVarNameInTable="columnnombre_completo" msprop:Generator_ColumnPropNameInRow="nombre_completo" msprop:Generator_ColumnPropNameInTable="nombre_completoColumn" msprop:Generator_UserColumnName="nombre_completo" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -138,7 +138,7 @@ where SIG_DETALLE_PEDIDOS.ano_eje = @ano_eje  and SIG_DETALLE_PEDIDOS.sec_ejec =
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="vListaPedidoDetalle" msprop:Generator_TableClassName="vListaPedidoDetalleDataTable" msprop:Generator_TableVarName="tablevListaPedidoDetalle" msprop:Generator_TablePropName="vListaPedidoDetalle" msprop:Generator_RowDeletingName="vListaPedidoDetalleRowDeleting" msprop:Generator_RowChangingName="vListaPedidoDetalleRowChanging" msprop:Generator_RowEvHandlerName="vListaPedidoDetalleRowChangeEventHandler" msprop:Generator_RowDeletedName="vListaPedidoDetalleRowDeleted" msprop:Generator_UserTableName="vListaPedidoDetalle" msprop:Generator_RowChangedName="vListaPedidoDetalleRowChanged" msprop:Generator_RowEvArgName="vListaPedidoDetalleRowChangeEvent" msprop:Generator_RowClassName="vListaPedidoDetalleRow">
+        <xs:element name="vListaPedidoDetalle" msprop:Generator_TableClassName="vListaPedidoDetalleDataTable" msprop:Generator_TableVarName="tablevListaPedidoDetalle" msprop:Generator_RowChangedName="vListaPedidoDetalleRowChanged" msprop:Generator_TablePropName="vListaPedidoDetalle" msprop:Generator_RowDeletingName="vListaPedidoDetalleRowDeleting" msprop:Generator_RowChangingName="vListaPedidoDetalleRowChanging" msprop:Generator_RowEvHandlerName="vListaPedidoDetalleRowChangeEventHandler" msprop:Generator_RowDeletedName="vListaPedidoDetalleRowDeleted" msprop:Generator_RowClassName="vListaPedidoDetalleRow" msprop:Generator_UserTableName="vListaPedidoDetalle" msprop:Generator_RowEvArgName="vListaPedidoDetalleRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CODIGO_ITEM" msprop:Generator_ColumnVarNameInTable="columnCODIGO_ITEM" msprop:Generator_ColumnPropNameInRow="CODIGO_ITEM" msprop:Generator_ColumnPropNameInTable="CODIGO_ITEMColumn" msprop:Generator_UserColumnName="CODIGO_ITEM" minOccurs="0">
@@ -170,5 +170,14 @@ where SIG_DETALLE_PEDIDOS.ano_eje = @ano_eje  and SIG_DETALLE_PEDIDOS.sec_ejec =
         </xs:element>
       </xs:choice>
     </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vListaPedidos" />
+      <xs:field xpath="mstns:ANO_EJE" />
+      <xs:field xpath="mstns:NRO_PECOSA" />
+      <xs:field xpath="mstns:NRO_PEDIDO" />
+      <xs:field xpath="mstns:TIPO_PEDIDO" />
+      <xs:field xpath="mstns:TIPO_BIEN" />
+      <xs:field xpath="mstns:SEC_EJEC" />
+    </xs:unique>
   </xs:element>
 </xs:schema>

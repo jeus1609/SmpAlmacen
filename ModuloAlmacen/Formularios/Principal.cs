@@ -34,5 +34,42 @@ namespace ModuloAlmacen.Formularios
         {
             new Reportes.KardexInventario().Show();
         }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Principal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Formularios.login login = Formularios.login.Instancia();
+            login.Close();
+        }
+
+        private void configurarSIGAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Formularios.Configs.ConexionSIGA().Show();
+        }
+
+        private void Principal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (string.Equals((sender as Button).Name, @"CloseButton"))
+            {
+                MessageBox.Show("Esta seguro");
+                e.Cancel = true;
+            }
+            // Do something proper to CloseButton.
+            else
+            {
+                e.Cancel = false;
+            }
+                MessageBox.Show("Saliendo");
+            // Then assume that X has been clicked and act accordingly.
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Acerca_de.AcercaDe().Show();
+        }
     }
 }

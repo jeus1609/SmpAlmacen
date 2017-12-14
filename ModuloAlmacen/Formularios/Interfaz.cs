@@ -12,7 +12,9 @@ namespace ModuloAlmacen.Formularios
 {
     public partial class Interfaz : Form
     {
-        string newCnnStr = "Data Source=192.168.1.100;Initial Catalog=" + "DBSMP" + ";Persist Security Info=True;User ID=sa;Password=Semo123";
+        //Configs.Conexion conexion = Configs.Conexion.Instancia();
+        string newCnnStr = Configs.Conexion.Instancia().DevolverCadena();
+        //string newCnnStr = "Data Source=192.168.1.100;Initial Catalog=" + "SIGA" + ";Persist Security Info=True;User ID=sa;Password=Semo123";
         string sNroPecosa;
         string sNroPedido;
         bool bImportado = false;
@@ -20,10 +22,12 @@ namespace ModuloAlmacen.Formularios
         DBALMACENDataSet dsAlmacen = new DBALMACENDataSet();
         DataSets.dsSIGA dsSiga = new DataSets.dsSIGA();
 
+        //SIGA
         DataSets.dsSIGATableAdapters.vListaPedidoDetalleTableAdapter adapListaPedidosDetalle = new DataSets.dsSIGATableAdapters.vListaPedidoDetalleTableAdapter();
-        DataSets.dsALMACENTableAdapters.spConsultarSiExiste adapConsultarSiExiste = new DataSets.dsALMACENTableAdapters.spConsultarSiExiste();
         DataSets.dsSIGATableAdapters.vListaPedidosTableAdapter adapListaPedidos = new DataSets.dsSIGATableAdapters.vListaPedidosTableAdapter();
-
+        
+        //ALMACEN
+        DataSets.dsALMACENTableAdapters.spConsultarSiExiste adapConsultarSiExiste = new DataSets.dsALMACENTableAdapters.spConsultarSiExiste();
         DataSets.dsALMACENTableAdapters.ENTRADATableAdapter adapEntrada = new DataSets.dsALMACENTableAdapters.ENTRADATableAdapter();
         DataSets.dsALMACENTableAdapters.ENTRADA_DETALLETableAdapter adapEntradaDetalle = new DataSets.dsALMACENTableAdapters.ENTRADA_DETALLETableAdapter();
         DataSets.dsALMACENTableAdapters.CATALOGO_BIENTableAdapter adapCatalogoBien = new DataSets.dsALMACENTableAdapters.CATALOGO_BIENTableAdapter();
@@ -38,14 +42,13 @@ namespace ModuloAlmacen.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Esta Operacion puede demorar si no tiene buena conexion a Internet\n Desea Continuar", "Informacion", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
+            //if (DialogResult.Yes == MessageBox.Show("Esta Operacion puede demorar si no tiene buena conexion a Internet\n Desea Continuar", "Informacion", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
             {
                 dataGridView1.Rows.Clear();
                 try
-                {              
-                    //Properties.Settings.Default[Properties.Settings.Default.SIGAConnectionString] = newCnnStr;
+                {
                     adapListaPedidos.Connection.ConnectionString = newCnnStr;
-                    //Properties.Settings.Default.
+
                     adapListaPedidos.FillByActProy(dsSiga.vListaPedidos, "2187136", int.Parse(txtAnio.Text));
 
                     foreach (DataRow row in dsSiga.vListaPedidos.Rows)
@@ -196,9 +199,6 @@ namespace ModuloAlmacen.Formularios
 
                 //try
                 {
-                    adapListaPedidosDetalle = new DataSets.dsSIGATableAdapters.vListaPedidoDetalleTableAdapter();
-                    
-
                     foreach (DataGridViewRow rowDataGrid1 in dataGridView1.Rows)
                     {
                         DataGridViewCheckBoxCell chkSeleccionar = (DataGridViewCheckBoxCell)rowDataGrid1.Cells["Seleccionar"];

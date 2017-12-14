@@ -493,6 +493,18 @@ namespace ModuloAlmacen.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public vListaPedidosRow FindByANO_EJENRO_PECOSANRO_PEDIDOTIPO_PEDIDOTIPO_BIENSEC_EJEC(decimal ANO_EJE, decimal NRO_PECOSA, string NRO_PEDIDO, string TIPO_PEDIDO, string TIPO_BIEN, decimal SEC_EJEC) {
+                return ((vListaPedidosRow)(this.Rows.Find(new object[] {
+                            ANO_EJE,
+                            NRO_PECOSA,
+                            NRO_PEDIDO,
+                            TIPO_PEDIDO,
+                            TIPO_BIEN,
+                            SEC_EJEC})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 vListaPedidosDataTable cln = ((vListaPedidosDataTable)(base.Clone()));
                 cln.InitVars();
@@ -540,6 +552,13 @@ namespace ModuloAlmacen.DataSets {
                 base.Columns.Add(this.columnFECHA_PEDIDO);
                 this.columnMOTIVO_PEDIDO = new global::System.Data.DataColumn("MOTIVO_PEDIDO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMOTIVO_PEDIDO);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnANO_EJE,
+                                this.columnNRO_PECOSA,
+                                this.columnNRO_PEDIDO,
+                                this.columnTIPO_PEDIDO,
+                                this.columnTIPO_BIEN,
+                                this.columnSEC_EJEC}, true));
                 this.columnANO_EJE.AllowDBNull = false;
                 this.columnSEC_EJEC.AllowDBNull = false;
                 this.columnTIPO_BIEN.AllowDBNull = false;
@@ -548,6 +567,7 @@ namespace ModuloAlmacen.DataSets {
                 this.columnTIPO_PEDIDO.MaxLength = 1;
                 this.columnNRO_PEDIDO.AllowDBNull = false;
                 this.columnNRO_PEDIDO.MaxLength = 5;
+                this.columnNRO_PECOSA.AllowDBNull = false;
                 this.columnnombre_completo.MaxLength = 60;
                 this.columnMOTIVO_PEDIDO.ReadOnly = true;
                 this.columnMOTIVO_PEDIDO.MaxLength = 200;
@@ -1070,12 +1090,7 @@ namespace ModuloAlmacen.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public decimal NRO_PECOSA {
                 get {
-                    try {
-                        return ((decimal)(this[this.tablevListaPedidos.NRO_PECOSAColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NRO_PECOSA\' de la tabla \'vListaPedidos\' es DBNull.", e);
-                    }
+                    return ((decimal)(this[this.tablevListaPedidos.NRO_PECOSAColumn]));
                 }
                 set {
                     this[this.tablevListaPedidos.NRO_PECOSAColumn] = value;
@@ -1128,18 +1143,6 @@ namespace ModuloAlmacen.DataSets {
                 set {
                     this[this.tablevListaPedidos.MOTIVO_PEDIDOColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsNRO_PECOSANull() {
-                return this.IsNull(this.tablevListaPedidos.NRO_PECOSAColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetNRO_PECOSANull() {
-                this[this.tablevListaPedidos.NRO_PECOSAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1602,14 +1605,13 @@ namespace ModuloAlmacen.DataSets.dsSIGATableAdapters {
                 "               SIG_DETALLE_PEDIDOS.TIPO_BIEN = SIG_PEDIDOS.TIPO_BIEN AND SIG_DET" +
                 "ALLE_PEDIDOS.TIPO_PEDIDO = SIG_PEDIDOS.TIPO_PEDIDO AND \r\n                       " +
                 "  SIG_DETALLE_PEDIDOS.NRO_PEDIDO = SIG_PEDIDOS.NRO_PEDIDO INNER JOIN\r\n          " +
-                "               [10.19.0.13].[SIGA].[dbo].SIG_PERSONAL ON SIG_PEDIDOS.SEC_EJEC = " +
-                "SIG_PERSONAL.sec_ejec AND SIG_PEDIDOS.EMPLEADO = SIG_PERSONAL.empleado\r\nWHERE   " +
-                "     (SIG_PEDIDOS.ACT_PROY = @ActProy) AND (SIG_PEDIDOS.ANO_EJE = @AnioEje) AND " +
-                "(SIG_PEDIDOS.TIPO_BIEN = \'B\')\r\nGROUP BY SIG_PEDIDOS.SEC_EJEC, SIG_PEDIDOS.ANO_EJ" +
-                "E, SIG_PEDIDOS.TIPO_PEDIDO, SIG_PEDIDOS.TIPO_BIEN, SIG_PEDIDOS.NRO_PEDIDO, \r\n   " +
-                "                      SIG_DETALLE_PECOSA.NRO_PECOSA, SIG_PERSONAL.nombre_complet" +
-                "o, SIG_PEDIDOS.FECHA_REG, ISNULL( cast( SIG_PEDIDOS.MOTIVO_PEDIDO as Varchar(200" +
-                ")),\'Ninguno\')";
+                "               SIG_PERSONAL ON SIG_PEDIDOS.SEC_EJEC = SIG_PERSONAL.sec_ejec AND " +
+                "SIG_PEDIDOS.EMPLEADO = SIG_PERSONAL.empleado\r\nWHERE        (SIG_PEDIDOS.ACT_PROY" +
+                " = @ActProy) AND (SIG_PEDIDOS.ANO_EJE = @AnioEje) AND (SIG_PEDIDOS.TIPO_BIEN = \'" +
+                "B\')\r\nGROUP BY SIG_PEDIDOS.SEC_EJEC, SIG_PEDIDOS.ANO_EJE, SIG_PEDIDOS.TIPO_PEDIDO" +
+                ", SIG_PEDIDOS.TIPO_BIEN, SIG_PEDIDOS.NRO_PEDIDO, \r\n                         SIG_" +
+                "DETALLE_PECOSA.NRO_PECOSA, SIG_PERSONAL.nombre_completo, SIG_PEDIDOS.FECHA_REG, " +
+                "ISNULL( cast( SIG_PEDIDOS.MOTIVO_PEDIDO as Varchar(200)),\'Ninguno\')";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ActProy", global::System.Data.SqlDbType.VarChar, 7, global::System.Data.ParameterDirection.Input, 0, 0, "ACT_PROY", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AnioEje", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 4, 0, "ANO_EJE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
