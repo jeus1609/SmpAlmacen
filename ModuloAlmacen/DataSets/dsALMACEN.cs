@@ -1,16 +1,11 @@
-﻿namespace ModuloAlmacen.DataSets
+﻿
+namespace ModuloAlmacen.DataSets
 {
 }
 
-namespace ModuloAlmacen
+namespace ModuloAlmacen.DataSets
 {
-    public partial class DBALMACENDataSet
+    public partial class dsALMACEN
     {
     }
 }
-//namespace ModuloAlmacen.DataSets
-//{
-//    public partial class dsALMACEN
-//    {
-//    }
-//}

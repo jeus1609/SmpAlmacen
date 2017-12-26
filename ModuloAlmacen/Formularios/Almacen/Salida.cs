@@ -11,7 +11,7 @@ namespace ModuloAlmacen.Formularios.Almacen
 {
     public partial class Salida : Form
     {
-        DBALMACENDataSet dsAlmacen = new DBALMACENDataSet();
+        DataSets.dsALMACEN dsAlmacen = new DataSets.dsALMACEN();
         DataSets.dsALMACENTableAdapters.spConsultarSiExiste adapAlmacen = new DataSets.dsALMACENTableAdapters.spConsultarSiExiste();
 
         string sIdEntradaDetalle;

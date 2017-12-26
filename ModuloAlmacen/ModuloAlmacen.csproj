@@ -53,7 +53,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Icono SMP.ico</ApplicationIcon>
+    <ApplicationIcon>Caja.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -126,11 +126,11 @@
     <Compile Include="Formularios\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Mantenimiento\Almacen.cs">
+    <Compile Include="Formularios\Mantenimiento\UbicacionAlmacen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Mantenimiento\Almacen.Designer.cs">
-      <DependentUpon>Almacen.cs</DependentUpon>
+    <Compile Include="Formularios\Mantenimiento\UbicacionAlmacen.Designer.cs">
+      <DependentUpon>UbicacionAlmacen.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Principal.cs">
       <SubType>Form</SubType>
@@ -153,6 +153,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsSIGA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Reportes\rptKardexInv.cs">
       <AutoGen>True</AutoGen>
@@ -185,8 +190,8 @@
     <EmbeddedResource Include="Formularios\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Mantenimiento\Almacen.resx">
-      <DependentUpon>Almacen.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Mantenimiento\UbicacionAlmacen.resx">
+      <DependentUpon>UbicacionAlmacen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -196,14 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Reportes\rptKardexInv.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptKardexInv.cs</LastGenOutput>
@@ -249,6 +249,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Caja.ico" />
     <Content Include="DataSets\DBALMACEN.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -256,7 +257,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DBALMACEN.mdf</DependentUpon>
     </Content>
-    <Content Include="Icono SMP.ico" />
+    <None Include="Resources\Login.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

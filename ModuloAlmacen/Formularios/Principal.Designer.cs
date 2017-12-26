@@ -36,15 +36,15 @@
             this.importarPECOSAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kardexDeInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configurarSIGAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seleccionarAlmacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
-            this.seleccionarAlmacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.proyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -111,21 +111,6 @@
             this.kardexDeInventarioToolStripMenuItem.Text = "Kardex de Inventario";
             this.kardexDeInventarioToolStripMenuItem.Click += new System.EventHandler(this.kardexDeInventarioToolStripMenuItem_Click);
             // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.acercaDeToolStripMenuItem});
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.acercaDeToolStripMenuItem.Text = "Acerca de ...";
-            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
-            // 
             // herramientasToolStripMenuItem
             // 
             this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -142,6 +127,34 @@
             this.configurarSIGAToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.configurarSIGAToolStripMenuItem.Text = "Configurar SIGA";
             this.configurarSIGAToolStripMenuItem.Click += new System.EventHandler(this.configurarSIGAToolStripMenuItem_Click);
+            // 
+            // seleccionarAlmacenToolStripMenuItem
+            // 
+            this.seleccionarAlmacenToolStripMenuItem.Name = "seleccionarAlmacenToolStripMenuItem";
+            this.seleccionarAlmacenToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.seleccionarAlmacenToolStripMenuItem.Text = "Almacen";
+            this.seleccionarAlmacenToolStripMenuItem.Click += new System.EventHandler(this.seleccionarAlmacenToolStripMenuItem_Click);
+            // 
+            // proyectoToolStripMenuItem
+            // 
+            this.proyectoToolStripMenuItem.Name = "proyectoToolStripMenuItem";
+            this.proyectoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.proyectoToolStripMenuItem.Text = "Proyecto";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acercaDeToolStripMenuItem});
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de ...";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -165,18 +178,6 @@
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
             this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
-            // 
-            // seleccionarAlmacenToolStripMenuItem
-            // 
-            this.seleccionarAlmacenToolStripMenuItem.Name = "seleccionarAlmacenToolStripMenuItem";
-            this.seleccionarAlmacenToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.seleccionarAlmacenToolStripMenuItem.Text = "Almacen";
-            // 
-            // proyectoToolStripMenuItem
-            // 
-            this.proyectoToolStripMenuItem.Name = "proyectoToolStripMenuItem";
-            this.proyectoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.proyectoToolStripMenuItem.Text = "Proyecto";
             // 
             // Principal
             // 

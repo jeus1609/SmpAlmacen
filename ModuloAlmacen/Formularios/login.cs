@@ -34,8 +34,16 @@ namespace ModuloAlmacen.Formularios
             conexion.Usuario = Properties.Settings.Default.SIGA_user;
             conexion.Passwd = Properties.Settings.Default.SIGA_passwd;
 
+            DataSets.dsALMACENTableAdapters.spConsultarSiExiste adapConsulta = new DataSets.dsALMACENTableAdapters.spConsultarSiExiste();
+            
+
             new Principal().Show();
             this.Hide();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

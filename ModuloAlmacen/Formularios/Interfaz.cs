@@ -19,7 +19,7 @@ namespace ModuloAlmacen.Formularios
         string sNroPedido;
         bool bImportado = false;
 
-        DBALMACENDataSet dsAlmacen = new DBALMACENDataSet();
+        DataSets.dsALMACEN dsAlmacen = new DataSets.dsALMACEN();
         DataSets.dsSIGA dsSiga = new DataSets.dsSIGA();
 
         //SIGA
