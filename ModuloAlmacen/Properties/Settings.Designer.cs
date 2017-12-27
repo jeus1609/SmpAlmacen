@@ -26,7 +26,8 @@ namespace ModuloAlmacen.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.100;Initial Catalog=DBALMACEN;User ID=sa;Password=Semo123")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DataSets\\DBAL" +
+            "MACEN.mdf;Integrated Security=True;Connect Timeout=30")]
         public string DBALMACENConnectionString {
             get {
                 return ((string)(this["DBALMACENConnectionString"]));
