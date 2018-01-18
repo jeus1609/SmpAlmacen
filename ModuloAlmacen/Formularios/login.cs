@@ -21,24 +21,30 @@ namespace ModuloAlmacen.Formularios
             return datos;
         }
 
+        DataSets.dsLoginTableAdapters.QueriesTableAdapter adapLogin = new DataSets.dsLoginTableAdapters.QueriesTableAdapter();        
+
         public login()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {          
-            Formularios.Configs.Conexion conexion = Configs.Conexion.Instancia();
-            conexion.Servidor = Properties.Settings.Default.SIGA_servidor;
-            conexion.Basedatos = Properties.Settings.Default.SIGA_database;
-            conexion.Usuario = Properties.Settings.Default.SIGA_user;
-            conexion.Passwd = Properties.Settings.Default.SIGA_passwd;
+        {
+            if ((string)adapLogin.ConsultarPassword(txtUsuario.Text) == txtPassword.Text)
+            {
+                Formularios.Configs.Conexion conexion = Configs.Conexion.Instancia();
+                conexion.Servidor = Properties.Settings.Default.SIGA_servidor;
+                conexion.Basedatos = Properties.Settings.Default.SIGA_database;
+                conexion.Usuario = Properties.Settings.Default.SIGA_user;
+                conexion.Passwd = Properties.Settings.Default.SIGA_passwd;
 
-            DataSets.dsALMACENTableAdapters.spConsultarSiExiste adapConsulta = new DataSets.dsALMACENTableAdapters.spConsultarSiExiste();
-            
+                //DataSets.dsALMACENTableAdapters.spConsultarSiExiste adapConsulta = new DataSets.dsALMACENTableAdapters.spConsultarSiExiste();
 
-            new Principal().Show();
-            this.Hide();
+                new Principal().Show();
+                this.Hide();
+            }
+            else
+                MessageBox.Show("Contraseña y/o usuario incorrecto","",MessageBoxButtons.OK,MessageBoxIcon.Information);            
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

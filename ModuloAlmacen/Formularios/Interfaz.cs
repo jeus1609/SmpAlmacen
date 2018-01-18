@@ -33,6 +33,9 @@ namespace ModuloAlmacen.Formularios
         DataSets.dsALMACENTableAdapters.CATALOGO_BIENTableAdapter adapCatalogoBien = new DataSets.dsALMACENTableAdapters.CATALOGO_BIENTableAdapter();
         DataSets.dsALMACENTableAdapters.MOVIMIENTO_BIENTableAdapter adapMovimientoBien = new DataSets.dsALMACENTableAdapters.MOVIMIENTO_BIENTableAdapter();
 
+        String CodigoUnicoPi = Properties.Settings.Default.CodigoUnicoPi;
+        String sCodigoAlmacen = Properties.Settings.Default.IdAlmacen;
+
         bool bListaCargada = false;
 
         public Interfaz()
@@ -44,12 +47,22 @@ namespace ModuloAlmacen.Formularios
         {
             //if (DialogResult.Yes == MessageBox.Show("Esta Operacion puede demorar si no tiene buena conexion a Internet\n Desea Continuar", "Informacion", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
             {
+                Configs.PleaseWaitForm formCarga = new Configs.PleaseWaitForm();
+                formCarga.Show();
+                Application.DoEvents();
                 dataGridView1.Rows.Clear();
+
+                int contadorPecosas = 0;
+
+                int iCodigoUnico;
+                bool resultado = int.TryParse(CodigoUnicoPi, out iCodigoUnico);
+                if (!resultado)
+                    MessageBox.Show("Codigo Unico invalido, por favor revise la configuracion de almacen");
+
                 try
                 {
                     adapListaPedidos.Connection.ConnectionString = newCnnStr;
-
-                    adapListaPedidos.FillByActProy(dsSiga.vListaPedidos, "2187136", int.Parse(txtAnio.Text));
+                    adapListaPedidos.FillByActProy(dsSiga.vListaPedidos, iCodigoUnico.ToString(), int.Parse(txtAnio.Text));                    
 
                     foreach (DataRow row in dsSiga.vListaPedidos.Rows)
                     {
@@ -93,13 +106,19 @@ namespace ModuloAlmacen.Formularios
                                 false
                                 );
                         }
+                        contadorPecosas +=1;
                     }
 
-                    bListaCargada = true;
+                    bListaCargada = true;                    
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message,"",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    formCarga.Hide();
+                    MessageBox.Show("Se cargaron " + contadorPecosas.ToString() + " Pecosas", "Proceso terminado con exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
@@ -165,7 +184,7 @@ namespace ModuloAlmacen.Formularios
             string importarTipoBien;
             string importarTipoPedido;
 
-            int importarNroAlmacen = 1;
+            
             string importarNroPecosa;
             string importarNroPedido;
             string importarNroOrden;
@@ -197,7 +216,12 @@ namespace ModuloAlmacen.Formularios
             {
                 ContadorImportacion = 0;
 
-                //try
+                int idAlamcen;
+                bool resultado = int.TryParse(sCodigoAlmacen, out idAlamcen);
+                if(!resultado)
+                    MessageBox.Show("Almacen invalido, por favor revise la configuracion de almacen");
+                
+                try
                 {
                     foreach (DataGridViewRow rowDataGrid1 in dataGridView1.Rows)
                     {
@@ -217,7 +241,7 @@ namespace ModuloAlmacen.Formularios
                             //importarEntregado = 
                             importarSolicitante = rowDataGrid1.Cells["Solicitante"].Value.ToString();
 
-                            itentityEntrada = int.Parse(adapEntrada.InsertItentity(importarNroAlmacen, importarNroPecosa, importarNroPedido, importarNroOrden, importarJustificacion, importarFechapedido, importarEntregado, importarSolicitante).ToString());
+                            itentityEntrada = int.Parse(adapEntrada.InsertItentity(idAlamcen, importarNroPecosa, importarNroPedido, importarNroOrden, importarJustificacion, importarFechapedido, importarEntregado, importarSolicitante).ToString());
                             //MessageBox.Show(itentityEntrada.ToString());
 
                             //Consultando DetallePecosas
@@ -257,10 +281,10 @@ namespace ModuloAlmacen.Formularios
                     }
                     MessageBox.Show("Se importaron " + ContadorImportacion.ToString() + " registros correctamente");
                 }
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

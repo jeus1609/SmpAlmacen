@@ -46,10 +46,10 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(550, 68);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 28);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -58,19 +58,19 @@
             // 
             this.txtCadena.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtCadena.Location = new System.Drawing.Point(0, 159);
-            this.txtCadena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCadena.Margin = new System.Windows.Forms.Padding(4);
             this.txtCadena.Name = "txtCadena";
             this.txtCadena.ReadOnly = true;
             this.txtCadena.Size = new System.Drawing.Size(692, 22);
-            this.txtCadena.TabIndex = 1;
+            this.txtCadena.TabIndex = 7;
             // 
             // txtBaseDatos
             // 
             this.txtBaseDatos.Location = new System.Drawing.Point(13, 94);
-            this.txtBaseDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBaseDatos.Margin = new System.Windows.Forms.Padding(4);
             this.txtBaseDatos.Name = "txtBaseDatos";
             this.txtBaseDatos.Size = new System.Drawing.Size(132, 22);
-            this.txtBaseDatos.TabIndex = 2;
+            this.txtBaseDatos.TabIndex = 1;
             // 
             // label1
             // 
@@ -95,10 +95,10 @@
             // txtPasswd
             // 
             this.txtPasswd.Location = new System.Drawing.Point(333, 94);
-            this.txtPasswd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPasswd.Margin = new System.Windows.Forms.Padding(4);
             this.txtPasswd.Name = "txtPasswd";
             this.txtPasswd.Size = new System.Drawing.Size(132, 22);
-            this.txtPasswd.TabIndex = 4;
+            this.txtPasswd.TabIndex = 3;
             // 
             // label3
             // 
@@ -113,10 +113,10 @@
             // txtUsuario
             // 
             this.txtUsuario.Location = new System.Drawing.Point(176, 94);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(132, 22);
-            this.txtUsuario.TabIndex = 6;
+            this.txtUsuario.TabIndex = 2;
             // 
             // label4
             // 
@@ -131,10 +131,10 @@
             // txtServidor
             // 
             this.txtServidor.Location = new System.Drawing.Point(16, 32);
-            this.txtServidor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtServidor.Margin = new System.Windows.Forms.Padding(4);
             this.txtServidor.Name = "txtServidor";
             this.txtServidor.Size = new System.Drawing.Size(292, 22);
-            this.txtServidor.TabIndex = 8;
+            this.txtServidor.TabIndex = 0;
             // 
             // label5
             // 
@@ -150,10 +150,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.MintCream;
             this.button2.Location = new System.Drawing.Point(550, 29);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 28);
-            this.button2.TabIndex = 11;
+            this.button2.TabIndex = 4;
             this.button2.Text = "Probar Conexion";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -164,7 +164,7 @@
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(129, 28);
-            this.button3.TabIndex = 12;
+            this.button3.TabIndex = 6;
             this.button3.Text = "Cancelar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -189,8 +189,9 @@
             this.Controls.Add(this.txtCadena);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ConexionSIGA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConexionSIGA";
             this.Load += new System.EventHandler(this.ConexionSIGA_Load);
             this.ResumeLayout(false);

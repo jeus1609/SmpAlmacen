@@ -48,7 +48,9 @@ namespace ModuloAlmacen.Formularios
 
         private void configurarSIGAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Formularios.Configs.ConexionSIGA().Show();
+            Formularios.Configs.ConexionSIGA frmConexionSiga = new Configs.ConexionSIGA();
+            frmConexionSiga.MdiParent = this;
+            frmConexionSiga.Show();
         }
 
         private void Principal_FormClosing(object sender, FormClosingEventArgs e)
@@ -61,12 +63,21 @@ namespace ModuloAlmacen.Formularios
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Acerca_de.AcercaDe().Show();
+            new Acerca_de.AcercaDe().ShowDialog();
         }
 
         private void seleccionarAlmacenToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Mantenimiento.UbicacionAlmacen frmUbicacionAlmacen = new Mantenimiento.UbicacionAlmacen();
+            frmUbicacionAlmacen.MdiParent = this;
+            frmUbicacionAlmacen.Show();
+        }
 
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Mantenimiento.Usuarios frmUsuarios = new Mantenimiento.Usuarios();
+            frmUsuarios.MdiParent = this;
+            frmUsuarios.Show();
         }
     }
 }

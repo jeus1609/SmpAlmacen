@@ -296,11 +296,13 @@
             // 
             // txtAnio
             // 
+            this.txtAnio.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ModuloAlmacen.Properties.Settings.Default, "AnioAlmacen", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtAnio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAnio.Location = new System.Drawing.Point(15, 31);
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(50, 20);
             this.txtAnio.TabIndex = 24;
-            this.txtAnio.Text = "2017";
+            this.txtAnio.Text = global::ModuloAlmacen.Properties.Settings.Default.AnioAlmacen;
             // 
             // label6
             // 
@@ -393,7 +395,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 12;
-            this.textBox1.Text = "2187136";
             this.textBox1.Visible = false;
             // 
             // label7
@@ -451,7 +452,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(846, 427);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.checkBox2);

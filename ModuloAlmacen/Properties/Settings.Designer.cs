@@ -104,5 +104,65 @@ namespace ModuloAlmacen.Properties {
                 this["ProyectoSiaf"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string AnioAlmacen {
+            get {
+                return ((string)(this["AnioAlmacen"]));
+            }
+            set {
+                this["AnioAlmacen"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NombrePi {
+            get {
+                return ((string)(this["NombrePi"]));
+            }
+            set {
+                this["NombrePi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DireccionPi {
+            get {
+                return ((string)(this["DireccionPi"]));
+            }
+            set {
+                this["DireccionPi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CodigoUnicoPi {
+            get {
+                return ((string)(this["CodigoUnicoPi"]));
+            }
+            set {
+                this["CodigoUnicoPi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string IdAlmacen {
+            get {
+                return ((string)(this["IdAlmacen"]));
+            }
+            set {
+                this["IdAlmacen"] = value;
+            }
+        }
     }
 }
