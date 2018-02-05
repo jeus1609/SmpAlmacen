@@ -38,7 +38,7 @@ namespace ModuloAlmacen.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.100;Initial Catalog=SIGA;Persist Security Info=True;User ID" +
-            "=sa;Password=Semo123")]
+            "=smp;Password=Semo123")]
         public string SIGAConnectionString {
             get {
                 return ((string)(this["SIGAConnectionString"]));
